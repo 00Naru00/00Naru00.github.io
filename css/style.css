@@ -1,0 +1,1137 @@
+* {
+    margin : 0;
+    padding : 0;
+
+
+    --color :  #e6e3e3;
+    --bg_color : #ffffff15;
+    --color_footer_copy : #333;
+    --faux_black : rgb(32, 32, 32);
+    --haut_bas : #1f1f1f;
+
+    color : var(--faux_black); 
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ! HEADER ! */
+
+header nav {
+    margin: 10px;
+    border-top: solid 3px var(--faux_black);
+    border-bottom: solid 3px var(--faux_black);
+}
+
+header li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--faux_black);
+}
+
+.article {
+    display: none;
+}
+
+header li {
+    font-weight: bold;
+}
+header li:hover {
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+header p{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: var(--color);
+    border-radius: 10px;
+}
+
+header nav input{
+    display: none;
+}
+
+/* ! END HEADER ! */
+
+.corp{
+    display:flex;
+    flex-direction: row;
+    margin-left:  10px;
+}
+
+
+/* ! MAIN ! */
+.disposition main {
+    width: 70%;  
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: var(--color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+
+.disposition main div{
+    margin: 0px 15px 0px 15px;
+    
+}
+
+
+.disposition main div:first-of-type h2 {
+    margin-top: 20px;
+}
+
+.disposition main img{
+    width: 40%;
+    height:40%;
+    border-radius: 10px;
+}
+
+.disposition main p{
+    text-align: justify;
+    font-size: 25px;
+}
+
+.disposition main div:nth-of-type(odd) img{
+    float: left;
+    margin: 10px 20px 0 0;
+  
+}
+
+.disposition main div:nth-of-type(even) img{
+    float: right; 
+    margin: 10px 0 0 20px;
+}
+
+.disposition main div blockquote{
+
+    margin-top: 10px;
+}
+
+
+
+.disposition main div a{
+    text-decoration: none;
+}
+
+
+.disposition main div cite{
+    font-weight: bold;
+}
+
+
+.disposition main div h2{
+    margin-bottom: 5px;
+    
+}
+
+.disposition main div:nth-of-type(even) h2{
+    text-align: right;
+}
+/* ! END MAIN ! */
+
+
+/* ! ASIDE ! */
+.disposition aside{
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.disposition aside  div{
+    background-color: var(--color);
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+
+.disposition aside div:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.disposition aside p{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.disposition aside img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.disposition aside div a .imgPtit{
+    height: 50%;
+    width: 75%;
+    align-self: center;
+}
+
+.disposition aside div a {
+    display: flex;
+    flex-direction: column;
+}
+
+.disposition aside div h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* ! END ASIDE ! */
+
+
+p {
+    font-size: 30px;
+}
+
+
+h2 {
+    font-size: 30px;
+
+}
+
+body{
+    background-color: var(--bg_color);
+}
+
+
+/* ! FOOTER ! */
+footer{
+    margin-top: 15px;
+}
+
+
+.footerNav{
+    background-color: var(--color);
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    
+}
+.footerNav a{
+    font-size: 15px;
+}
+
+
+.footerCopyright{
+    background-color: var(--color_footer_copy);
+}
+
+.footerCopyright p {
+    padding-bottom: 2px;
+    text-align: center;
+    color: #f8f7f7;
+    font-size: 12px;
+}
+
+/* ! END FOOTER ! */
+
+
+/* ! Contact !*/
+
+
+.contact a {
+    font-size: 18px;
+}
+
+.contact h3  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* ! Contact - Main !*/
+.contact main {
+    width: 80%;  
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 5px;
+
+}
+
+.contact main {
+    background-color: var(--color);
+    margin: 0 100px 0 150px;
+    border-radius: 10px;
+}
+
+
+
+/* ! Contact - Aside !*/
+.contact aside{
+    width: 35%;
+    margin-right: 15px;
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;   
+    border-radius: 10px;
+
+}
+
+
+
+.contact aside .aide a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.contact aside div {
+    margin: 0 10px 20px 10px;
+}
+
+.contact aside div li{
+    margin-top: 5px;
+    list-style: none;
+}
+
+.contact aside div  li a{
+    text-decoration: none;
+   justify-self: auto;
+}
+
+.contact aside .aide{
+    align-items: center;
+}
+
+.contact aside .reseau{
+    margin: 0 0 10px 5px;
+}
+
+.contact aside .reseau img{
+    height: 5%;
+    width: 5%;
+    margin-right: 5px;
+}
+
+.contact aside div:first-child{
+    margin-top: 10px;
+}
+
+.contact aside .nouveautes li{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.contact aside .nouveautes li  a{
+    margin-bottom: -25px;
+}
+
+.contact .abonnez_vous{
+    height: 50%;
+    position: sticky;
+    top: 10px;
+}
+
+
+/* ! FIN Contact !*/
+
+
+textarea{
+    width: 25%;
+}
+
+button{
+    width: 5%;
+}
+
+/* ! .formulaire ! */
+.formulaire > form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formulaire  {
+    font-size: 25px;
+  
+}
+
+
+.formulaire > form > div > textarea{
+    height: 45px;
+  
+}
+
+#message{
+    height: 100px;
+}
+
+.formulaire > form > div > input, button{
+    height: 30px;
+}
+
+.formulaire button {
+    margin-bottom: 5px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.formulaire  form  div  textarea, input, button{
+    width: 80%;
+    background-color: var(--color);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.formulaire form .checkbox{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulaire form .checkbox input{
+    width: 10%;
+}
+
+.formulaire form .hobbies {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulaire form .hobbies .hobbiesDiv{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    width: 100%;
+    justify-content: space-around;
+} 
+
+
+.formulaire form .hobbies .hobbiesDiv div input {
+    width: 25px;
+    height: 25px;
+}
+
+/* ! .formulaire ! */
+
+
+/* ! PAGE statistique ! */
+.statistiques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  th{
+    position: sticky; 
+    top: 0; 
+    background-color: #cdcdcd; 
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+td{
+    font-weight: normal;
+    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+/* ! FIN PAGE statistique ! */
+
+
+
+textarea{
+    resize: none;
+}
+
+
+/* ! PAGE BLOG !*/
+
+.custom-slider { 
+
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-slider  p:last-child{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color);
+    margin-left: 25%;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.custom-slider .trop_grand{
+    object-position: 40% 100%;
+}
+
+
+.slide-container {
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.6s ease;
+}
+
+.prev{ 
+    left: 20%; 
+}
+
+.next { 
+    right: 20%; 
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.slide-text{
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    top: 250px;
+    background-color: 0;
+}
+.slide-index {
+    color: #ffffff;
+    font-size: 13px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 1%;
+    left: 20.5%
+    
+}
+
+.slide-img{
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 20% 0 20%;
+    border-radius: 10px;
+}
+
+.slide-dot{ 
+    text-align: center; 
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover { 
+    background-color: #111111; 
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+.sectionBlog main{
+    width: 80%;
+}
+
+.sectionBlog a {
+    font-size: 18px;
+}
+
+.sectionBlog h3  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.sectionBlog aside{
+    width: 20%;
+    margin-right: 15px;
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;   
+    border-radius: 10px;
+    height: 70%;
+}
+
+
+
+.sectionBlog aside .aide a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.sectionBlog aside div {
+    margin: 0 10px 20px 10px;
+}
+
+.sectionBlog aside div li{
+    margin-top: 5px;
+    list-style: none;
+}
+
+.sectionBlog aside div  li a{
+    text-decoration: none;
+   justify-self: auto;
+}
+
+.sectionBlog aside .aide{
+    align-items: center;
+}
+
+.sectionBlog aside .reseau{
+    margin: 0 0 10px 5px;
+}
+
+.sectionBlog aside .reseau img{
+    height: 5%;
+    width: 5%;
+    margin-right: 5px;
+}
+
+.sectionBlog aside div:first-child{
+    margin-top: 10px;
+}
+
+.sectionBlog aside .nouveautes li{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.sectionBlog aside .nouveautes li  a{
+    margin-bottom: -25px;
+}
+
+/* ! FIN PAGE BLOG ! */
+
+
+
+/* ! PAGE ARTCLES !*/
+.art{
+    display: flex;
+    flex-direction: row;
+}
+
+.art main{
+    width: 70%;
+    margin: 0 20px 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.art main div p{
+    text-align: justify;
+    font-size: 18px;
+    margin: 0 5px 0 5px;
+}
+
+.art main h3{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.art main h3:first-child{
+    margin-top: 10px;
+}
+
+.art main h2{
+    align-self: center;
+}
+
+.art main div:nth-of-type(odd) img{
+    float: left;
+    margin-right: 20px;
+   
+}
+
+.art main div:nth-of-type(even) img{
+    float: right; 
+    margin-left: 20px;
+}
+
+.art main div{
+    margin-top: 10px;
+    padding: 0 10px 10px  10px;
+    background-color: var(--color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+
+
+.art main img{
+    border-radius: 10px;
+}
+
+.art main .photo1{
+    width: 15%;
+    height: 15%;
+}
+
+.art main .photo2{
+    width: 40%;
+    height: 40%;
+}
+
+
+.art main .photo3{
+    width: 30%;
+}
+
+.art main .photo4{
+    width: 40%;
+    height: 40%;
+}
+
+.titre{
+    margin-top: 0px;
+}
+
+
+
+.art aside{
+    width: 20%;
+    margin-left: 40px;
+    padding: 10px 0 0 0;
+    background-color: var(--color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    position: sticky;
+    top: 0px;
+}
+
+
+.art aside h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 12.5%;
+    text-decoration: underline;
+    align-items: center;
+    
+    
+}
+.art aside a div p{
+    text-decoration: non;
+    font-size: 20px;
+   align-self: center;
+   margin-bottom: 5px;
+   
+}
+
+
+.art aside li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+.art aside ul li div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.art aside a{
+    text-decoration: none;
+}
+
+
+.art aside ul  li div img{
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+/* ! Scroll Back To Top Button ! */
+#btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--color_footer_copy);
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+#btn:hover {
+    background-color: #555;
+  }
+
+
+
+.presentation{
+    display:flex;
+    flex-direction: row;
+}
+
+.presentation aside{
+    width: 30%;
+
+}
+
+.presentation aside img {
+    width: 10%;
+}
+
+
+
+
+/* ! Presentation !*/
+.presentation main{
+    background-color: var(--bg_color);
+    margin: 0 10px 0 10px;
+}
+
+.presentation main div:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.presentation main div{
+    background-color: var(--color);
+    border-radius: 10px;
+    padding : 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+
+.presentation main div img {
+    height: 40%;
+    width: 40%;
+}
+
+.presentation main div ul {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.presentation main div li {
+    list-style: none;
+}
+
+.presentation main div h2 {
+    font-size: 30px;
+}
+.presentation main div p {
+    font-size: 20px;
+}
+/* ! PRESENTATION FIN ! */
+
+/* ? -------------------------------------------------- ? */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* ! HEADER ! */
+    header nav{
+        margin: 0;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        z-index: 1;
+        border-top: none;
+        border-bottom: none;
+        position: absolute;
+    }
+
+    header nav input{
+        margin: 10px;
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2; 
+    }
+    
+    .barre{
+        margin-top: 10px;
+    }
+
+    header nav span{
+        margin-left: 10px;
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--color);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    
+    header nav ul
+    {
+        display:flex;
+        flex-direction: column;
+        margin: 5px 0 5px ;
+        background-color: var(--color);
+        transform-origin: 0% 0%;
+        transform: translate(-150%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }  
+
+
+    
+    header nav input:checked{
+        z-index: 1;
+    }
+
+    header nav ul li
+    {
+        display: block;
+        padding: 5px;
+        font-size: 22px;
+        background-color: var(--color);    
+    }
+    
+    header nav  input:checked ~ ul
+    {
+        transform: none;
+    }
+
+    /* ! FIN BOUTON NAV ! */
+
+
+    .sousmenu:hover .article{
+        display: initial;
+        text-decoration: none;   
+    }
+
+    header h1 {
+        font-size: 55px;
+    }
+
+    header p{
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 20px;
+    }
+
+    /* ! END HEADER ! */
+
+    /* ! index ! */
+
+    /* ! .disposition ! */
+    .disposition{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px 0 10px;
+    }
+    
+    /* ! main !*/
+
+    .disposition main{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    
+    .disposition main div{
+        margin: 0px 15px 20px 15px;
+    }
+    
+    
+    .disposition main p{
+        font-size: 20px;
+    }
+    
+    .disposition main div:nth-of-type(odd) img{
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .disposition main div:nth-of-type(even) img{
+        float: left; 
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    
+    .disposition main div:nth-of-type(even) h2{
+        text-align: center;
+    }
+
+    .disposition main div h2{
+        text-align: center;
+    }
+
+    /* ! aside ! */
+
+    .disposition aside{
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    /* ! Contact ! */
+
+    .formulaire > form > div > textarea, input, button{
+        width: 95%;
+        background-color: var(--color);
+        border-radius: 10px;
+        
+    }
+    
+    #btn{
+        bottom: 50px;
+    }
+
+    .corp main p{
+        font-size: 10px;
+    }
+
+    
+
+
+}
+
+
+/*
+BOUTON POUR LE FAIRE BOUGER     
+    header nav span:first-child{
+        transform-origin: 0% 0%;
+    }
+    
+    header nav span:nth-child(2){
+        transform-origin: 0% 100%;
+    }
+    
+    header nav input:checked span
+    {
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+        padding-left: 100px;
+    }
+    
+    header nav input:checked span:nth-child(3)
+    {
+        transform: rotate(0deg) scale(0.2, 0.2);
+        background: #232323;
+        padding-left: 100px;
+    }
+    
+    header nav input:checked span:nth-child(2)
+    {
+        transform: rotate(45deg) translate(0, -1px);
+        background: #232323;
+        padding-left: 100px;
+    }
+
+*/
