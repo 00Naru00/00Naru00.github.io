@@ -9,7 +9,7 @@
     --faux_black : rgb(32, 32, 32);
     --haut_bas : #1f1f1f;
 
-    color : var(--faux_black); 
+    color : #323232; 
 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,30 +72,40 @@ header nav input{
     display: none;
 }
 
+
+
+
 /* ! END HEADER ! */
 
 .corp{
     display:flex;
     flex-direction: row;
-    margin-left:  10px;
+    margin: 0 10px 0 10px;
+    max-width: 100%;
+
+}
+
+.corp main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color);
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    width: 80%;
 }
 
 
 /* ! MAIN ! */
 .disposition main {
-    width: 70%;  
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-left: 5px;
     background-color: var(--color);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+    box-shadow: 0px 0px 10px rgb(85, 85, 85); 
+    margin-right: 20px;
+    width: auto;
 }
 
 .disposition main div{
     margin: 0px 15px 0px 15px;
-    
 }
 
 
@@ -103,10 +113,19 @@ header nav input{
     margin-top: 20px;
 }
 
+.disposition main div h2{
+    margin-bottom: 5px;    
+}
+
+.disposition main div:nth-of-type(even) h2{
+    text-align: right;
+}
+
 .disposition main img{
     width: 40%;
     height:40%;
     border-radius: 10px;
+    margin-right: 10px;
 }
 
 .disposition main p{
@@ -116,55 +135,43 @@ header nav input{
 
 .disposition main div:nth-of-type(odd) img{
     float: left;
-    margin: 10px 20px 0 0;
-  
+    margin-right: 20px;
 }
 
 .disposition main div:nth-of-type(even) img{
     float: right; 
-    margin: 10px 0 0 20px;
+    margin-left: 20px;
 }
 
 .disposition main div blockquote{
-
     margin-top: 10px;
 }
-
-
 
 .disposition main div a{
     text-decoration: none;
 }
 
-
 .disposition main div cite{
     font-weight: bold;
-}
-
-
-.disposition main div h2{
-    margin-bottom: 5px;
-    
-}
-
-.disposition main div:nth-of-type(even) h2{
-    text-align: right;
 }
 /* ! END MAIN ! */
 
 
 /* ! ASIDE ! */
-.disposition aside{
-    width: 30%;
-    margin-right: 15px;
-    margin-left: 5px;
-}
+
 
 .disposition aside  div{
     background-color: var(--color);
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+    box-shadow: 0px 0px 10px rgb(85, 85, 85);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.disposition aside  div:hover{
+    box-shadow: 0px 0px 10px rgb(20, 20, 20);
 }
 
 .disposition aside div:not(:last-child){
@@ -177,16 +184,11 @@ header nav input{
     text-align: justify;
 }
 
-.disposition aside img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
-}
-
-.disposition aside div a .imgPtit{
+.imgPtit{
     height: 50%;
     width: 75%;
     align-self: center;
+    border-radius: 10px;
 }
 
 .disposition aside div a {
@@ -197,6 +199,7 @@ header nav input{
 .disposition aside div h2{
     font-size: 20px;
     margin-bottom: 5px;
+    align-self: center;
 }
 
 /* ! END ASIDE ! */
@@ -222,35 +225,29 @@ footer{
     margin-top: 15px;
 }
 
-
 .footerNav{
     background-color: var(--color);
     padding-top: 5px;
     padding-bottom: 5px ;
-    
 }
 .footerNav a{
-    font-size: 15px;
+    font-size: 20px;
 }
-
 
 .footerCopyright{
     background-color: var(--color_footer_copy);
+    padding: 5px 0 5px 0;
 }
 
 .footerCopyright p {
-    padding-bottom: 2px;
     text-align: center;
     color: #f8f7f7;
-    font-size: 12px;
+    font-size: 20px;
 }
-
 /* ! END FOOTER ! */
 
 
 /* ! Contact !*/
-
-
 .contact a {
     font-size: 18px;
 }
@@ -262,21 +259,6 @@ footer{
 }
 
 /* ! Contact - Main !*/
-.contact main {
-    width: 80%;  
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-left: 5px;
-
-}
-
-.contact main {
-    background-color: var(--color);
-    margin: 0 100px 0 150px;
-    border-radius: 10px;
-}
-
 
 
 /* ! Contact - Aside !*/
@@ -353,6 +335,7 @@ footer{
 
 textarea{
     width: 25%;
+    resize: none;
 }
 
 button{
@@ -369,34 +352,26 @@ button{
 
 .formulaire  {
     font-size: 25px;
-  
 }
 
-
-.formulaire > form > div > textarea{
+#subject{
     height: 45px;
-  
 }
 
 #message{
     height: 100px;
 }
 
-.formulaire > form > div > input, button{
+.formulaire form div input, button{
     height: 30px;
 }
 
-.formulaire button {
+.formulaire button:first-child {
     margin-bottom: 5px;
-}
-
-.button{
-    margin-top: 20px;
 }
 
 .formulaire  form  div  textarea, input, button{
     width: 80%;
-    background-color: var(--color);
     border-radius: 10px;
     font-size: 20px;
 }
@@ -421,18 +396,22 @@ button{
 .formulaire form .hobbies .hobbiesDiv{
     display: flex;
     flex-direction: row;
-    margin-bottom: 5px;
-    width: 100%;
+    width: 80%;
     justify-content: space-around;
 } 
 
+.formulaire form .hobbies .hobbiesDiv:first-child{
+    margin-bottom: 10px;
+}
 
 .formulaire form .hobbies .hobbiesDiv div input {
     width: 25px;
     height: 25px;
 }
 
-/* ! .formulaire ! */
+
+
+/* ! FIN formulaire ! */
 
 
 /* ! PAGE statistique ! */
@@ -449,68 +428,58 @@ table {
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
-  }
+}
   
-  caption {
+caption {
     caption-side: bottom;
     padding: 10px;
     font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
+}
+
+thead, tfoot {
     background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
+}
+
+th, td {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
     text-align: center;
-  }
+    width: 125px;
+}
 
-  th{
+td:hover {
+    font-size: 18px;
+}
+
+th{
     position: sticky; 
     top: 0; 
     background-color: #cdcdcd; 
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
     font-size: 20px;
-  }
+}
 
 td{
     font-weight: normal;
-    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
 }
   
-  td:last-of-type {
-    text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
+tfoot th {
     text-align: right;
-  }
+}
   
-  tfoot td {
+tfoot td {
     font-weight: bold;
-  }
+}
 /* ! FIN PAGE statistique ! */
 
 
-
-textarea{
-    resize: none;
-}
-
-
 /* ! PAGE BLOG !*/
-
 .custom-slider { 
-
     display: flex;
     flex-direction: column;
 }
@@ -574,7 +543,6 @@ textarea{
     align-self: center;
     text-align: center;
     top: 250px;
-    background-color: 0;
 }
 .slide-index {
     color: #ffffff;
@@ -627,6 +595,7 @@ textarea{
 
 .sectionBlog main{
     width: 80%;
+    background-color: var(--bg_color);
 }
 
 .sectionBlog a {
@@ -705,6 +674,19 @@ textarea{
 
 
 /* ! PAGE ARTCLES !*/
+.wiki:hover{
+    padding: 2px;
+    background-color: var(--faux_black);
+    color: #cdcdcd;
+    border-radius: 10px;
+}
+
+.wiki{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
 .art{
     display: flex;
     flex-direction: row;
@@ -753,7 +735,11 @@ textarea{
     padding: 0 10px 10px  10px;
     background-color: var(--color);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+    box-shadow: 0px 0px 10px rgb(85, 85, 85);
+}
+
+.art main div:hover{
+    box-shadow: 0px 0px 10px rgb(20, 20, 20);
 }
 
 
@@ -811,7 +797,7 @@ textarea{
     
 }
 .art aside a div p{
-    text-decoration: non;
+    text-decoration: none;
     font-size: 20px;
    align-self: center;
    margin-bottom: 5px;
@@ -869,31 +855,25 @@ textarea{
 
 
 
-.presentation{
-    display:flex;
-    flex-direction: row;
-}
 
-.presentation aside{
-    width: 30%;
 
-}
-
-.presentation aside img {
-    width: 10%;
-}
 
 
 
 
 /* ! Presentation !*/
+
 .presentation main{
     background-color: var(--bg_color);
     margin: 0 10px 0 10px;
 }
 
 .presentation main div:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.presentation main div:hover{
+    box-shadow: 0px 0px 10px rgb(20, 20, 20);
 }
 
 .presentation main div{
@@ -901,7 +881,7 @@ textarea{
     border-radius: 10px;
     padding : 10px;
     text-align: justify;
-    box-shadow: 0px 0px 10px rgb(45, 43, 43);
+    box-shadow: 0px 0px 10px rgb(85, 85, 85);
 }
 
 .presentation main div img {
@@ -926,11 +906,20 @@ textarea{
 .presentation main div p {
     font-size: 20px;
 }
+
+.presentation aside{
+    width: 30%;
+
+}
+
+.presentation aside img {
+    width: 10%;
+}
 /* ! PRESENTATION FIN ! */
 
 /* ? -------------------------------------------------- ? */
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
     /* ! HEADER ! */
     header nav{
@@ -977,9 +966,7 @@ textarea{
                     opacity 0.55s ease;
     }
 
-    
-    header nav ul
-    {
+    header nav ul{
         display:flex;
         flex-direction: column;
         margin: 5px 0 5px ;
@@ -988,23 +975,19 @@ textarea{
         transform: translate(-150%, 0);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }  
-
-
     
     header nav input:checked{
         z-index: 1;
     }
 
-    header nav ul li
-    {
+    header nav ul li{
         display: block;
         padding: 5px;
         font-size: 22px;
         background-color: var(--color);    
     }
     
-    header nav  input:checked ~ ul
-    {
+    header nav  input:checked ~ ul{
         transform: none;
     }
 
@@ -1022,8 +1005,9 @@ textarea{
 
     header p{
         text-align: center;
-        margin: 0 0 20px 0;
+        margin: 0 10px 20px 10px;
         font-size: 20px;
+        padding: 0 5px 0 5px;
     }
 
     /* ! END HEADER ! */
@@ -1031,11 +1015,69 @@ textarea{
     /* ! index ! */
 
     /* ! .disposition ! */
-    .disposition{
-        display: flex;
+    .corp{
         flex-direction: column;
         margin: 0 10px 0 10px;
     }
+
+    .corp main{
+       width: 95%;
+       margin: 0 0 10px 15px;
+    }
+
+    .corp aside{
+        width: 95%;
+        margin: 0 0 10px 15px;
+
+        align-items: center;
+    }
+
+    .corp aside ul{
+       display: flex;
+       flex-direction: row;
+    }
+
+    .corp aside li {
+       display: flex;
+       flex-direction: row;
+       align-content:space-around;
+    }
+
+    .corp aside .reseau img{
+        width: 10%;
+        height: 100%;
+    }
+
+    .corp aside h3{
+        font-size: 18px;
+    }
+
+    .nouveautes h3{
+        font-size: 15px;
+    }
+    /* ! ! */
+
+    /* ! BLOG ! */
+    .corp .blog img{
+        margin: 0 0 10px 0;
+        width: 100%;
+
+    }
+
+    .corp .blog p{
+        margin: 0 10px 5px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .prev{ 
+        left: 0%; 
+    }
+    
+    .next { 
+        right: 0%; 
+    }
+
     
     /* ! main !*/
 
@@ -1090,13 +1132,47 @@ textarea{
     }
     
     #btn{
-        bottom: 50px;
+        bottom: 75px;
     }
 
     .corp main p{
         font-size: 10px;
     }
 
+    /* ! BLOG ! */
+    .art{
+        flex-direction: column;
+    }
+
+    .art main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .art main h2{
+        text-align: center;
+    }
+
+    .art main div p{
+        font-size: 15px;
+    }
+
+    .art main div {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .art aside  {
+        width: 90%;
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+    .art aside h4   {
+        align-self: center;
+        text-decoration: none;
+        margin: 0;
+    }
     
 
 
